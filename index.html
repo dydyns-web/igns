@@ -1,171 +1,327 @@
 <!DOCTYPE html>
 
-<html>
-
-        <head>
-
-        
-
-               <meta charset="utf-8">
-
-            
-
-                <title>Welcome to your first page!</title>
-
-                
-
-                <link rel="stylesheet" href="http://static.supportindeed.com/default/index/style.css">
-
-                
-
-        </head>
-
-        
-
-        <body>
-
-        
-
-                <div id="wrapper">
-
-                        
-
-                        <div id="moving-background">
-
-                                
-
-                                <div id="parallax" class="clear">
-
-                                        <div id="last-layer" class="parallax-layer">
-
-                                        
-
-                                                <img src="http://static.supportindeed.com/default/index/final-background.png" alt="final background" />
-
-                                                
-
-                                        </div>                    
-
-                                        <div id="bottom-layer" class="parallax-layer">
-
-                                        
-
-                                                <img src="http://static.supportindeed.com/default/index/middle-layer.png" />
-
-                                                
-
-                                        </div>
-
-                                        <div id="top-layer" class="parallax-layer">
-
-                                        
-
-                                                <img src="http://static.supportindeed.com/default/index/top-layer.png" />
-
-                                                
-
-                                        </div>
-
-                                </div>
-
-                                
-
-                        </div>
-
-                        
-
-                        <div id="circles">
-
-                                <ul class="container">
-
-                                
-
-                                        <li>
-
-                                                <div class="inner-circles">
-
-                                                
-
-                                                        <p>1</p>
-
-                                                        
-
-                                                </div>
-
-                                                
-
-                                                <h3>
-
-                                                        Go to your <strong>Control Panel ( cPanel&#174; )</strong>
-
-                                                </h3>
-
-                                        
-
-                                        </li>
-
-                                        <li>
-
-                                                <div class="inner-circles">
-
-                                                
-
-                                                        <p>2</p>
-
-                                                        
-
-                                                </div>
-
-                                                <h3>
-
-                                                        <strong>Upload</strong> your website or use <strong>SitePad From cPanel&#174;</strong>
-
-                                                </h3>
-
-                                        </li>
-
-                                        <li>
-
-                                                <div class="inner-circles">
-
-                                                
-
-                                                        <p>3</p>
-
-                                                        
-
-                                                </div>
-
-                                                
-
-                                                <h3>
-
-                                                        <strong>Enjoy</strong> your website
-
-                                                </h3>
-
-                                        </li>
-
-                                </ul>
-
-                        </div>
-
-                
-
-                </div>
-
-           
-
-                <script src="http://static.supportindeed.com/default/index/jquery.min.js"></script>
-
-                <script src="http://static.supportindeed.com/default/index/jquery.event.frame.js"></script>
-
-                <script src="http://static.supportindeed.com/default/index/jquery.parallax.js"></script>
-
-                <script src="http://static.supportindeed.com/default/index/main.js"></script>
-
-        </body>
-
-
-
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<!-- HTML Specifications-->
+
+<title>WidozaFlix</title>
+<meta name="description" content="Disfruta de la nueva app de streaming gratuito de calidad rapido y seguro sin publicidad masiva solo en WidozaFlix"> <meta property="og:site_name" content="WidozaFlix">
+<meta property="og:title" content="Descargar WidozaFlix"> <meta property="og:description" content="Disfruta de la nueva app de streaming gratuito de calidad rapido y seguro sin publicidad masiva solo en WidozaFlix">
+<meta name="author" content="WidozaFlix">
+
+<!-- Mobile specifications -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="scripts/html5shiv.js"></script>
+<![endif]-->
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://archive.org/download/9644700575/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://archive.org/download/9644700575/animate.css"/>
+<link rel="stylesheet" href="https://archive.org/download/9644700575/simple-line-icons.css"/>
+<link rel="stylesheet" href="https://archive.org/download/9644700575/icomoon-soc-icons.css"/>
+<link rel="stylesheet" href="https://archive.org/download/9644700575/magnific-popup.css"/>
+<link rel="stylesheet" href="https://archive.org/download/9644700575/style-dark.css"/>
+
+<!-- Favicons -->
+<link rel="icon" href="https://i.ibb.co/68DDbwg/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="https://i.ibb.co/68DDbwg/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://i.ibb.co/xzyZB4s/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://i.ibb.co/SnRK5zm/apple-touch-icon-114x114.png">
+</head>
+
+<body data-spy="scroll" data-target=".navMenuCollapse">
+
+<!-- PRELOADER -->
+<div id="preloader">
+	<div class="battery inner">
+		<div class="load-line"></div>
+	</div>
+</div>
+
+<div id="wrap"> 
+				
+
+	<!-- NAVIGATION BEGIN -->
+	<nav class="navbar navbar-fixed-top navbar-slide">
+			<div class="container_fluid"> 
+				<a class="navbar-brand goto" href="index.html#wrap"> <img src="https://i.ibb.co/Pg2twtJ/logo.png" alt="WidozaFlix" height="27" width="56" /> </a>
+				<button class="navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<div class="collapse navbar-collapse navMenuCollapse">
+					<ul class="nav">
+						<li><a href="#features">Caracteristicas</a> </li>
+						<li><a href="#screenshots">Capturas</a></li>
+						<li><a href="#testimonials">Testimonios</a></li>
+                        <li><a href="#social">Red Social</a></li>
+						
+					</ul>
+				</div>
+			</div>
+	</nav>
+	<!-- NAVIGAION END -->
+	
+	
+	
+	<!-- INTRO BEGIN -->
+	<header id="full-intro" class="intro-block bg-color3" >
+		<div class="ray ray-vertical y-100 x-50 ray-rotate-135 laser-blink hidden-sm hidden-xs" ></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-12">
+					<img class="logo" src="https://i.ibb.co/Pg2twtJ/logo.png" alt="WidozaFlix" height="200" width="200" />
+					<h1 class="slogan">WidozaFlix la mejor app de streaming descargala ahora!</h1>
+					<!-- DESCARGAS -->
+					<a class="download-btn android-btn" href="https://repositorio.widozaflix.tk/WidozaFlix.apk">
+						<div class="btn-slide"></div>
+						<div class="btn-content"><i class="icon soc-icon-android"></i>Descargar para Android <center><b>WidozaFlix 0.1.16</b></center></div>
+					</a>
+					<!-- 2 -->
+					<a class="download-btn android-btn" href="https://repositorio.widozaflix.tk/WidozaFlix.apk">
+						<div class="btn-slide"></div>
+						<div class="btn-content"><i class="icon soc-icon-android"></i>Descargar para Android<center><b>WidozaFlix 0.1.17 [BETA]</b></center></div>
+					</a>
+					<!-- 3 -->
+					<a class="download-btn android-btn" href="https://repositorio.widozaflix.tk">
+						<div class="btn-slide"></div>
+						<div class="btn-content"><i class="icon soc-icon-youtube"></i>Descargar desde el<center><b>Repositorio</b></center></div>
+					</a>
+				</div>
+				<!-- FIN -->
+				<div class="col-md-4 hidden-sm hidden-xs">
+					<img class="intro-screen wow bounceInUp" data-wow-delay="0.5s" src="https://i.ibb.co/bzjy80R/cc.png" height="773" width="400" alt="" />
+					
+				</div>
+			</div>
+			
+		</div>
+		<div id="slides" data-stellar-ratio="0.4">
+			<div class="slides-container" > <img src="https://i.ibb.co/Jyh8x08/banner.jpg" alt="banner"> <img src="https://i.ibb.co/Jyh8x08/banner.jpg" alt="banner"> <img src="https://i.ibb.co/Jyh8x08/banner.jpg"id="" alt="banner"> </div>
+		</div>
+	</header>
+	<!-- INTRO END --> 
+	
+	
+	
+	<!-- FEATURES BEGIN -->
+	<section id="features" class="img-block-3col">
+		<div class="container">
+			<div class="title">
+				<h2>Caracteristicas</h2>
+				<p>Regresamos con una APP mas Simple e Intuitiva (NO ES LA VERSION FINAL)</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<ul class="item-list-right item-list-big">
+						<li class="wow fadeInLeft">
+							<i class="fas fa-desktop fa-4x"></i>
+							<h3>Compatibilidad</h3>
+							<p>Tenemos la mejor compatibilidad para que la disfrutes en cualquier dispositivo.</p>
+						</li>
+						<li class="wow fadeInLeft">
+							<i class="fas fa-magic fa-4x"></i>
+							<h3>Calidad</h3>
+							<p>La mejor calidad para que disfrutes tus programas series películas favoritos.</p>
+						</li>
+						<li class="wow fadeInLeft">
+							<i class="fas fa-file-alt fa-4x"></i>
+							<h3>No publicidad masiva </h3>
+							<p>No necesitas ver publicidad masiva para disfrutar tus series y/o películas.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-sm-push-4">
+					<ul class="item-list-left item-list-big">
+						<li class="wow fadeInRight">
+							<i class="fas fa-location-arrow fa-4x"></i>
+							<h3>Actualizacion</h3>
+							<p>Actualizacion de películas series reparaciones pedidos diario para que disfrutes el contenido más actual.</p>
+						</li>
+						<li class="wow fadeInRight">
+							<i class="fas fa-clone fa-4x"></i>
+							<h3>Rápido y seguro</h3>
+							<p>No sufrirás de lentitud ya qué nuestros servidores dónde alojamos el contenido son rápidos y de alto rendimiento</p>
+						</li>
+						<li class="wow fadeInRight">
+							<i class="fas fa-gift fa-4x"></i>							<h3>Gratis</h3>
+							<p>La aplicacion es GRATUITA sin costo para ti.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-sm-pull-4">
+					<div class="animation-box wow bounceIn">
+					 	<img class="highlight-left wow" src="https://i.ibb.co/4wy7MwF/light.png" height="192" width="48" alt="" />
+						<img class="highlight-right wow" src="https://i.ibb.co/4wy7MwF/light.png" height="192" width="48" alt="" />
+						<img class="screen" src="https://i.ibb.co/bzjy80R/cc.png" alt="WidozaFlix Captura" height="581" width="300" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FEATURES END --> 
+
+
+	
+	<!-- SCREENSHOTS BEGIN -->
+	<section id="screenshots" class="bg-color2">
+		<div class="container-fluid wow fadeIn">
+			<h2>Capturas</h2>
+			<div id="screenshots-slider" class="owl-carousel">
+				<a class="item" href="https://i.ibb.co/yQKc822/1.jpg" title="Captura 1"><img src="https://i.ibb.co/yQKc822/1.jpg" alt="screen1" width="250" height="444" /></a>
+				<a class="item" href="https://i.ibb.co/1RLZ4M6/2.jpg" title="Captura 2"><img src="https://i.ibb.co/1RLZ4M6/2.jpg" alt="screen1" width="250" height="444"/></a>
+				<a class="item" href="https://i.ibb.co/NxcvDn8/3.jpg" title="Captura 3"><img src="https://i.ibb.co/NxcvDn8/3.jpg" alt="screen1" width="250" height="444"/></a>
+				<a class="item" href="https://i.ibb.co/HnxVzMP/4.jpg" title="Captura 4"><img src="https://i.ibb.co/HnxVzMP/4.jpg" alt="screen1" width="250" height="444"/></a>
+				<a class="item" href="https://i.ibb.co/HDrMh8h/5.jpg" title="App Screen 5"><img src="https://i.ibb.co/HDrMh8h/5.jpg" alt="screen1" width="250" height="444"/></a>
+				
+			</div>
+		</div>
+	</section>
+	<!-- SCREENSHOTS END -->
+	
+	
+	
+	<!-- FACTS BEGIN -->
+	<section id="facts">
+		<div class="container">
+			<ul class="facts-list">
+				<li class="wow bounceIn">
+					<i class="fas fa-download fa-4x"></i>
+					<h3 class="wow">146</h3>
+					<h4>Descargas</h4>
+				</li>
+				<li class="wow bounceIn" data-wow-delay="0.4s">
+					<i class="fas fa-star fa-4x"></i>
+					<h3 class="wow">42</h3>
+					<h4>Favoritos</h4>
+				</li>
+				<li class="wow bounceIn" data-wow-delay="0.8s">
+					<i class="fas fa-thumbs-up fa-4x"></i>
+					<h3 class="wow">75</h3>
+					<h4>Likes</h4>
+				</li>
+				<li class="wow bounceIn" data-wow-delay="1.2s">
+					<i class="fas fa-clock fa-4x"></i>
+					<h3 class="wow">4896</h3>
+					<h4>Horas Online</h4>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- FACTS END --> 
+
+	<!-- TESTIMONIALS BEGIN -->
+	<section id="testimonials" class="bg-color3">
+		<div class="container-fluid">
+			<h2>Testimonios</h2>
+			<div id="testimonials-slider" class="owl-carousel">
+				<div class="item container">
+					<div class="talk">De las mejores aplicaciones que son poco conocidas sin anuncios ni tanto rollo mis felicitaciones al equipo de widozaflix</div>
+					<img class="photo" src="https://i.ibb.co/nQfzwKL/customer-photo.jpg" alt="customer" />
+					<div class="name">Kike Mancio</div>
+					<div class="ocupation">Usuario</div>
+				</div>	
+				<div class="item container">
+					<div class="talk">Soy un hombre de 54 años ya sabrán cómo soy con la tecnología pero está aplicación es tan sencilla y su equipo de soporte es grandioso, es tan fácil cómo darle click a tu serie o película y listo ya está listo para reproducir.</div>
+					<img class="photo" src="https://i.ibb.co/nQfzwKL/customer-photo.jpg" alt="customer" />
+					<div class="name">Mario Alvarado</div>
+					<div class="ocupation">Usuario</div>
+				</div>
+				<div class="item container">
+					<div class="talk">Increíble su contenido, 24/7 viendo canales de tv y nunca me da algún error sinceramente los mejores!</div>
+					<img class="photo" src="https://i.ibb.co/nQfzwKL/customer-photo.jpg" alt="customer" />
+					<div class="name">Luis Ponce Aguilar</div>
+					<div class="ocupation">Usuario</div>
+				</div>
+				<div class="item container">
+					<div class="talk">De las pocas aplicaciones qué valen la pena 5/5</div>
+					<img class="photo" src="https://i.ibb.co/nQfzwKL/customer-photo.jpg" alt="customer" />
+					<div class="name">Anónimo</div>
+					<div class="ocupation">Usuario</div>
+				</div>
+			</div>
+		</div>
+		<div class="block-bg"></div>
+	</section>
+	<!-- TESTIMONIALS END -->
+	
+
+	
+	<!-- SOCIAL BEGIN -->
+	<section id="social" class="bg-color2">
+		<div class="container-fluid">
+			<div class="title">
+				<h2>Siguenos en nuestras redes</h2>
+				<p>Enterate de todo lo nuevo de la app <br>dale Like a nuestra pagina de Facebook.</p>
+			</div>
+			
+			<ul class="soc-list wow flipInX">
+				
+				<li><a href="https://www.facebook.com/WidozaFlix-351939169328614/" rel="nofollow"><i class="fab fa-facebook fa-4x"></i></a></li>
+				<li><a href="https://youtube.com/channel/UCtb4lU7y8zaNmgqQyyoklig" rel="nofollow"><i class="fab fa-youtube fa-4x"></i></a></li>
+				<li><a href="https://t.me/WidozaFlix" rel="nofollow"><i class="fab fa-telegram fa-4x"></i></a></li>
+
+			</ul
+            			
+		></div>
+	</section>
+	<!-- SOCIAL END -->
+	
+	
+	<!-- DOWNLOAD BEGIN -->
+	<section id="download" class="bg-color-main">
+		<div class="container-fluid wow fadeInDown">
+			<a href="#wrap" class="goto">
+				<h2><i class="icon soc-icon-android"></i>Descarga WidozaFlix Gratis</h2>
+			</a>
+			</div>
+		<div class="block-bg" data-stellar-ratio="0.5"></div>
+	</section>
+	<!-- DOWNLOAD END -->
+	
+		<!-- FOOTER BEGIN -->
+	<footer id="footer">
+		<div class="container"> 
+			<p class="copyright">&copy; 2021 <br>
+			Creada por <a href="https://widozaflix.tk" target="_blank">WidozaFlix</a></p>
+		</div>
+		 <a href='https://www.symptoma.es/es/info/covid-19'>ㅤㅤ</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=2a55c5a3c6687266ad6f81dc0c5c39d58856be5e'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/807442/t/5"></script>
+	</footer>	
+	<!-- FOOTER END --> 
+	
+</div>
+
+
+<!-- MODALS BEGIN--> 
+
+<!-- subscribe modal-->
+<div class="modal fade" id="modalMessage" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3 class="modal-title"></h3>
+		</div>
+	</div>
+</div>
+<!-- JavaScript -->
+<script src="https://archive.org/download/9644700575/jquery-1.8.2.min.js"></script> 
+<script src="https://archive.org/download/9644700575/bootstrap.min.js"></script> 
+<script src="https://archive.org/download/9644700575/owl.carousel.min.js"></script> 
+<script src="https://archive.org/download/9644700575/jquery.validate.min.js"></script> 
+<script src="https://archive.org/download/9644700575/wow.min.js"></script> 
+<script src="https://archive.org/download/9644700575/smoothscroll.js"></script> 
+<script src="https://archive.org/download/9644700575/jquery.smooth-scroll.min.js"></script> 
+<script src="https://archive.org/download/9644700575/jquery.superslides.min.js"></script>
+<script src="https://archive.org/download/9644700575/placeholders.jquery.min.js"></script>
+<script src="https://archive.org/download/9644700575/jquery.magnific-popup.min.js"></script>
+<script src="https://archive.org/download/9644700575/jquery.stellar.min.js"></script>
+<script src="http://f.ign.gg/scripts/retina.min.js"></script>
+<script src="https://archive.org/download/9644700575/custom.js"></script>
+<script src="https://kit.fontawesome.com/1e89c05c03.js" crossorigin="anonymous"></script>
+
+<!--[if lte IE 9]>
+	<script src="scripts/respond.min.js"></script>
+<![endif]-->
+</body>
 </html>
