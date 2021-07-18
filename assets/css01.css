@@ -1,0 +1,263 @@
+:root {
+    --color-primary: #212121;
+    --color-sombra: rgb(41, 41, 41);
+    --background-modal: rgba(29, 29, 29, 0.664);
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    /* background: rgb(207, 124, 124) */
+}
+
+header {
+    float: left;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header:before {
+    content: '';
+    position: relative;
+    z-index: 0;
+    border-style: solid;
+    border-width: 0px 100vw 250px 0px;
+    border-color: transparent var(--color-primary) transparent transparent;
+}
+
+header h1 {
+    position: relative;
+    z-index: 3;
+    top: -18px;
+    left: 0px;
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+header h2 {
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: 200;
+    padding: 0px;
+    margin: auto;
+    color: gray;
+    text-align: end;
+    width: 85%;
+    text-shadow: 0px 0px 1px black;
+}
+
+header #login {
+    padding: 7px;
+    position: absolute;
+    z-index: 3;
+    right: 0px;
+    top: 0px;
+}
+
+header #login #txt_sesion {
+    display: none;
+}
+
+/*---------- CARDS CAPTURES APP-----------*/
+
+section {
+    clear: both;
+    position: relative;
+    max-width: 700px;
+    text-align: center;
+}
+
+section div {
+    background: white;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 380px;
+    width: 80%;
+    max-width: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px grey;
+    transform: translate(0px, 20px);
+}
+
+section div:hover {
+    box-shadow: 0px 0px 4px grey;
+}
+
+section div figure img {
+    width: 238px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -119px;
+    transform: translate(0px, -60px);
+    transition: all 0.5s ease-out;
+}
+
+section div figure img:hover {
+    transform: translate(0px, -70px);
+}
+
+section div figure figcaption {
+    text-align: start;
+    background: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 5px;
+    box-shadow: 0px -1px 5px grey;
+    padding: 30px;
+}
+
+/*------------ FOOTER -------------*/
+
+footer {
+    margin-top: -40px;
+    height: 220px;
+    position: relative;
+    z-index: 1;
+}
+
+footer ul {
+    margin-left: -23px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+footer ul li {
+    display: block;
+    padding: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:visited {
+    color: white;
+}
+
+footer:before {
+    content: '';
+    position: relative;
+    z-index: 0;
+    border-style: solid;
+    border-width: 0px 100vw 200px 0px;
+    border-color: transparent transparent var(--color-primary) transparent;
+}
+
+/* ------------- CARD DOWNLOAD -------------- */
+
+section a {
+    background: var(--color-primary);
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    margin: 60px auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 230px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-items: center;
+    align-content: center;
+    z-index: 50;
+}
+
+section a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 2%;
+    width:0%;
+    height: 100%;
+    
+    border-bottom: 3px solid green;
+    animation: 1s rotate infinite; 
+}
+
+@keyframes rotate {
+    0% {
+        left: 50%;
+    }
+    99% {
+        width: 96%;
+    }
+    100% {
+        border-radius: 3px;
+    }
+}
+
+section a img {
+    width: 50px;
+    margin: auto;
+}
+
+section a span {
+    margin: auto;
+}
+
+section a:hover::after {
+    animation-duration: 0.5s;
+}
+
+@media screen and (min-width:360px) {
+    #banner_app .body_modal a {
+        margin-top: 10px;
+        margin-left: 21%;
+    }
+}
+
+@media screen and (min-width:480px) {
+    header #login #txt_sesion {
+        display: inline-block;
+    }
+    #banner_app .body_modal {
+        left: 28%;
+    }
+    #banner_app .body_modal a {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width:767px) {
+    section {
+        left: 50%;
+        margin-left: -350px;
+    }
+    #banner_app .body_modal {
+        left: 30%;
+    }
+    #banner_app .body_modal a {
+        width: 160px;
+        margin-left: 21%;
+    }
+    header h2 {
+        margin-left: 10px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:950px) {
+    /*body{*/
+    /* background: rgb(190, 179, 77);*/
+    /*}*/
+    header:before {
+        border-width: 0px 100vw 300px 0px;
+    }
+    header h1 {
+        font-size: 200%;
+    }
+    #banner_app .body_modal {
+        left: 35%;
+    }
+}
